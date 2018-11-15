@@ -12,6 +12,13 @@
 		87621464219CDEDF001EE0E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87621462219CDEDF001EE0E7 /* Main.storyboard */; };
 		87621466219CDEE0001EE0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87621465219CDEE0001EE0E7 /* Assets.xcassets */; };
 		87621469219CDEE0001EE0E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87621467219CDEE0001EE0E7 /* LaunchScreen.storyboard */; };
+		87621471219CDF0E001EE0E7 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 87621470219CDF0E001EE0E7 /* field_observations.json */; };
+		87621473219CE28B001EE0E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621472219CE28B001EE0E7 /* DetailViewController.swift */; };
+		87621475219CE337001EE0E7 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621474219CE337001EE0E7 /* Observation.swift */; };
+		87621477219CE36A001EE0E7 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621476219CE36A001EE0E7 /* Class.swift */; };
+		87621479219CE404001EE0E7 /* ObservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621478219CE403001EE0E7 /* ObservationCell.swift */; };
+		8762147B219CE5E9001EE0E7 /* jsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762147A219CE5E9001EE0E7 /* jsonLoader.swift */; };
+		8762147D219CE5FD001EE0E7 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762147C219CE5FD001EE0E7 /* jsonParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		87621465219CDEE0001EE0E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87621468219CDEE0001EE0E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8762146A219CDEE0001EE0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87621470219CDF0E001EE0E7 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = field_observations.json; path = ../../../../Desktop/field_observations.json; sourceTree = "<group>"; };
+		87621472219CE28B001EE0E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		87621474219CE337001EE0E7 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		87621476219CE36A001EE0E7 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		87621478219CE403001EE0E7 /* ObservationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationCell.swift; sourceTree = "<group>"; };
+		8762147A219CE5E9001EE0E7 /* jsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonLoader.swift; sourceTree = "<group>"; };
+		8762147C219CE5FD001EE0E7 /* jsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				8762145E219CDEDF001EE0E7 /* AppDelegate.swift */,
-				87621460219CDEDF001EE0E7 /* ViewController.swift */,
 				87621462219CDEDF001EE0E7 /* Main.storyboard */,
 				87621465219CDEE0001EE0E7 /* Assets.xcassets */,
 				87621467219CDEE0001EE0E7 /* LaunchScreen.storyboard */,
 				8762146A219CDEE0001EE0E7 /* Info.plist */,
+				87621470219CDF0E001EE0E7 /* field_observations.json */,
+				87621460219CDEDF001EE0E7 /* ViewController.swift */,
+				87621472219CE28B001EE0E7 /* DetailViewController.swift */,
+				87621474219CE337001EE0E7 /* Observation.swift */,
+				87621476219CE36A001EE0E7 /* Class.swift */,
+				87621478219CE403001EE0E7 /* ObservationCell.swift */,
+				8762147A219CE5E9001EE0E7 /* jsonLoader.swift */,
+				8762147C219CE5FD001EE0E7 /* jsonParser.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -123,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87621469219CDEE0001EE0E7 /* LaunchScreen.storyboard in Resources */,
+				87621471219CDF0E001EE0E7 /* field_observations.json in Resources */,
 				87621466219CDEE0001EE0E7 /* Assets.xcassets in Resources */,
 				87621464219CDEDF001EE0E7 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87621475219CE337001EE0E7 /* Observation.swift in Sources */,
+				87621473219CE28B001EE0E7 /* DetailViewController.swift in Sources */,
+				8762147D219CE5FD001EE0E7 /* jsonParser.swift in Sources */,
 				87621461219CDEDF001EE0E7 /* ViewController.swift in Sources */,
+				87621477219CE36A001EE0E7 /* Class.swift in Sources */,
+				8762147B219CE5E9001EE0E7 /* jsonLoader.swift in Sources */,
+				87621479219CE404001EE0E7 /* ObservationCell.swift in Sources */,
 				8762145F219CDEDF001EE0E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
